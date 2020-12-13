@@ -3,9 +3,9 @@ package com.think.reader.qr.domain;
 import lombok.Data;
 
 @Data
-public class Url {
+public class Barcode {
 	
 	private String filename;
-	private String url;
+	private String text;
 
 }

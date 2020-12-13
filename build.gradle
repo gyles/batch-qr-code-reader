@@ -18,11 +18,11 @@ dependencyManagement {
 }
     
 dependencies {
+	compileOnly "org.projectlombok:lombok:$lombokVersion"
+	annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+
 	compileOnly "org.mapstruct:mapstruct:$mapstructVersion"
     annotationProcessor "org.mapstruct:mapstruct-processor:$mapstructVersion"
-    
-    compileOnly "org.projectlombok:lombok:$lombokVersion"
-    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
 	
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -30,6 +30,9 @@ dependencies {
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 	
 	implementation "org.springdoc:springdoc-openapi-ui:$springdocOpenapiVersion"
+
+	implementation "com.google.zxing:core:$zxingVersion"
+	implementation "com.google.zxing:javase:$zxingVersion"
 	
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

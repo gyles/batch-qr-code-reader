@@ -6,10 +6,10 @@ import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 
 @SpringBootApplication
 @ConfigurationPropertiesScan
-public class QrApplication {
+public class BarcodeApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(QrApplication.class, args);
+		SpringApplication.run(BarcodeApplication.class, args);
 	}
 
 }
